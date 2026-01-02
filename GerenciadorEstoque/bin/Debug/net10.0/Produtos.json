@@ -1,20 +1,16 @@
 [
   {
-    "$tipo": "ProdutoFisico",
-    "frete": 25,
-    "nome": "Playstation 5",
-    "preco": 3200
-  },
-  {
-    "$tipo": "ProdutoFisico",
-    "frete": 10,
-    "nome": "Iphone 13",
-    "preco": 3000
-  },
-  {
     "$tipo": "Curso",
-    "autor": "Guia do programador",
+    "autor": "Guia do Programador",
+    "vagas": 27,
     "nome": "C#",
-    "preco": 25.5
+    "preco": 25.99
+  },
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 15,
+    "estoque": 150,
+    "nome": " Playstation 5",
+    "preco": 3200
   }
 ]

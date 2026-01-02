@@ -46,6 +46,7 @@ namespace GerenciadorEstoque
                         Remover();
                         break;
                     case Menu.Entrada:
+                        Entrada();
                         break;
                     case Menu.Saida:
                         break;
@@ -83,7 +84,7 @@ namespace GerenciadorEstoque
         static void Remover()
         {
             ListarProdutos();
-            Console.WriteLine("Digite o nome do produto que deseja remover:");
+            Console.WriteLine("Digite o id do produto que deseja remover:");
             int id = int.Parse(Console.ReadLine());
             if(id >= 0 && id <= produtos.Count)
             {
@@ -216,6 +217,22 @@ namespace GerenciadorEstoque
                 Console.WriteLine("Erro ao carregar os produtos:");
                 Console.WriteLine(ex.Message);
                 produtos = new List<Produto>();
+            }
+        }
+
+        static void Entrada()
+        {
+            ListarProdutos();
+            Console.WriteLine("Digite o id do produto que deseja dar entrada:");
+            int id = int.Parse(Console.ReadLine());
+            if (id >= 0 && id <= produtos.Count)
+            {
+                produtos[id].AdicionarEntrada();
+                Salvar();
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
             }
         }
     }

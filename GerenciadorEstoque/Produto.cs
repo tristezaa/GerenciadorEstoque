@@ -14,10 +14,14 @@ namespace GerenciadorEstoque
         public string nome { get; set; }
         public float preco { get; set; }
 
+        public abstract void AdicionarEntrada();
+
         public virtual void Exibir()
         {
             Console.WriteLine($"Produto: {nome}");
             Console.WriteLine($"Preço: R$ {preco}");
         }
+
+
     }
 }

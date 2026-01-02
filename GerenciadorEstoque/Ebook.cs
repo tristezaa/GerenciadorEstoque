@@ -7,7 +7,7 @@ namespace GerenciadorEstoque
     class Ebook : Produto
     {
         public string autor { get; set; }
-        private int vendas { get; set; }
+        public int vendas { get; set; }
 
         public Ebook(string nome, float preco, string autor)
         {
@@ -16,8 +16,9 @@ namespace GerenciadorEstoque
             this.autor = autor;
         }
 
-        public void AdicionarEntrada()
+        public override void AdicionarEntrada()
         {
+            Console.WriteLine("produto digital, não possui estoque físico.");
         }
 
         public void AdicionarSaida()
