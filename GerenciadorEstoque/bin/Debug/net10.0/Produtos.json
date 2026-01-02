@@ -1,0 +1,20 @@
+[
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 25,
+    "nome": "Playstation 5",
+    "preco": 3200
+  },
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 10,
+    "nome": "Iphone 13",
+    "preco": 3000
+  },
+  {
+    "$tipo": "Curso",
+    "autor": "Guia do programador",
+    "nome": "C#",
+    "preco": 25.5
+  }
+]

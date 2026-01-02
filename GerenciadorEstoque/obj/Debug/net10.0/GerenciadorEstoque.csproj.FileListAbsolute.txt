@@ -1,0 +1,17 @@
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\GerenciadorEstoque.exe
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\GerenciadorEstoque.deps.json
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\GerenciadorEstoque.runtimeconfig.json
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\GerenciadorEstoque.dll
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\GerenciadorEstoque.pdb
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.AssemblyInfoInputs.cache
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.AssemblyInfo.cs
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.csproj.CoreCompileInputs.cache
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.dll
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\refint\GerenciadorEstoque.dll
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.pdb
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.genruntimeconfig.cache
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\ref\GerenciadorEstoque.dll
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\GerenciadorEstoque.csproj.AssemblyReference.cache
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\Cursos\C#\projetos\GerenciadorEstoque\GerenciadorEstoque\obj\Debug\net10.0\Gerencia.EEC87876.Up2Date
