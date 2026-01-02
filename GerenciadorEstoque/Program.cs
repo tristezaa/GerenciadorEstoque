@@ -43,6 +43,7 @@ namespace GerenciadorEstoque
                         Cadastro();
                         break;
                     case Menu.Remover:
+                        Remover();
                         break;
                     case Menu.Entrada:
                         break;
@@ -64,16 +65,36 @@ namespace GerenciadorEstoque
         static void ListarProdutos()
         {
             Console.WriteLine("=== Lista de Produtos ===");
-                if (produtos.Count == 0)
-                {
-                    Console.WriteLine("Nenhum produto cadastrado.");
-                    return;
-                }
-                foreach (Produto produto in produtos)
-                {
-                    produto.Exibir();
+            int i = 0;
+            if (produtos.Count == 0)
+            {
+                Console.WriteLine("Nenhum produto cadastrado.");
+                return;
+            }
+            foreach (Produto produto in produtos)
+            {
+                Console.WriteLine($"ID: {i}");
+                produto.Exibir();
+                i++;
                     
-                }
+            }
+        }
+
+        static void Remover()
+        {
+            ListarProdutos();
+            Console.WriteLine("Digite o nome do produto que deseja remover:");
+            int id = int.Parse(Console.ReadLine());
+            if(id >= 0 && id <= produtos.Count)
+            {
+                produtos.RemoveAt(id);
+                Salvar();
+                Console.WriteLine("Produto removido com sucesso!");
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
+            }
         }
         enum MenuCadastro
         {
