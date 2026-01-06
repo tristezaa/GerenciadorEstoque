@@ -16,6 +16,8 @@ namespace GerenciadorEstoque
 
         public abstract void AdicionarEntrada();
 
+        public abstract void AdicionarSaida();
+
         public virtual void Exibir()
         {
             Console.WriteLine($"Produto: {nome}");

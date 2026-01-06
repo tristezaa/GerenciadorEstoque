@@ -25,10 +25,14 @@ namespace GerenciadorEstoque
             Console.WriteLine($"Estoque atualizado. Quantidade em estoque: {estoque}");
         }
 
-        public void AdicionarSaida()
+        public override void AdicionarSaida()
         {
-            
-        }
+            Console.WriteLine($"Registrar saída no estoque do produto {nome}: ");
+            Console.WriteLine("Quantidade de saída: ");
+            int saida = int.Parse(Console.ReadLine());
+            estoque -= saida;
+            Console.WriteLine($"Estoque atualizado. Quantidade em estoque: {estoque}");
+        }   
 
         public override void Exibir()
         {

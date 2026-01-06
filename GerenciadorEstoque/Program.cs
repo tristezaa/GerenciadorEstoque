@@ -49,6 +49,7 @@ namespace GerenciadorEstoque
                         Entrada();
                         break;
                     case Menu.Saida:
+                        Saida();
                         break;
                     case Menu.Sair:
                         escolheuSair = true;
@@ -142,6 +143,7 @@ namespace GerenciadorEstoque
 
         static void CadastrarFisico()
         {
+            Console.Clear();
             Console.WriteLine("=== Cadastro de Produto Físico ===");
             Console.Write("Nome do produto: ");
             string nome = Console.ReadLine();
@@ -157,6 +159,7 @@ namespace GerenciadorEstoque
 
         static void CadastrarEbook()
         {
+            Console.Clear();
             Console.WriteLine("=== Cadastro de Ebook ===");
             Console.Write("Nome do ebook: ");
             string nome = Console.ReadLine();
@@ -172,6 +175,7 @@ namespace GerenciadorEstoque
 
         static void CadastrarCurso()
         {
+            Console.Clear();
             Console.WriteLine("=== Cadastro de Curso ===");
             Console.Write("Nome do curso: ");
             string nome = Console.ReadLine();
@@ -222,12 +226,32 @@ namespace GerenciadorEstoque
 
         static void Entrada()
         {
+            Console.Clear();
             ListarProdutos();
             Console.WriteLine("Digite o id do produto que deseja dar entrada:");
             int id = int.Parse(Console.ReadLine());
+            Console.Clear();
             if (id >= 0 && id <= produtos.Count)
             {
                 produtos[id].AdicionarEntrada();
+                Salvar();
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
+            }
+        }
+
+        static void Saida()
+        {
+            Console.Clear();
+            ListarProdutos();
+            Console.WriteLine("Digite o id do produto que deseja dar saída:");
+            int id = int.Parse(Console.ReadLine());
+            Console.Clear();
+            if (id >= 0 && id <= produtos.Count)
+            {
+                produtos[id].AdicionarSaida();
                 Salvar();
             }
             else

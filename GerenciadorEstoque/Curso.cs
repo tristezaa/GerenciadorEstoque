@@ -18,16 +18,20 @@ namespace GerenciadorEstoque
 
         public override void AdicionarEntrada()
         {
-            Console.WriteLine($"Adicionar entrada de vagas do produto {nome}: ");
+            Console.WriteLine($"Adicionar vagas liberadas para o curso \"{nome}\": ");
             Console.WriteLine("Quantidade de entrada: ");
             int entrada = int.Parse(Console.ReadLine());
             vagas += entrada;
-            Console.WriteLine($"Estoque atualizado. Quantidade de vagas: {vagas}");
+            Console.WriteLine($"Quantidade de vagas atualizada. Vaga disponíveis: {vagas}");
         }
 
-        public void AdicionarSaida()
+        public override void AdicionarSaida()
         {
-            
+            Console.WriteLine($"Registrar vagas ocupadas do curso {nome}: ");
+            Console.WriteLine("Quantidade de saída: ");
+            int saida = int.Parse(Console.ReadLine());
+            vagas -= saida;
+            Console.WriteLine($"Quantidade de vagas atualizada. Vaga disponíveis: {vagas}");
         }
 
         public override void Exibir()

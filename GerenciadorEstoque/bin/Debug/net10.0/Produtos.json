@@ -2,15 +2,50 @@
   {
     "$tipo": "Curso",
     "autor": "Guia do Programador",
-    "vagas": 27,
+    "vagas": 37,
     "nome": "C#",
     "preco": 25.99
   },
   {
     "$tipo": "ProdutoFisico",
     "frete": 15,
-    "estoque": 150,
+    "estoque": 137,
     "nome": " Playstation 5",
     "preco": 3200
+  },
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 10,
+    "estoque": 250,
+    "nome": "Iphone 13",
+    "preco": 3000
+  },
+  {
+    "$tipo": "Ebook",
+    "autor": "JK Rowling",
+    "vendas": 25,
+    "nome": "Harry Potter e a Pedra Filosofal",
+    "preco": 35
+  },
+  {
+    "$tipo": "Ebook",
+    "autor": "Rick Riordan",
+    "vendas": 12,
+    "nome": "Percy Jackson e os Olimpianos - O Ladr\u00E3o de Raios",
+    "preco": 38.99
+  },
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 5,
+    "estoque": 25,
+    "nome": "Mouse",
+    "preco": 150
+  },
+  {
+    "$tipo": "ProdutoFisico",
+    "frete": 25.8,
+    "estoque": 10,
+    "nome": "Teclado",
+    "preco": 250.99
   }
 ]

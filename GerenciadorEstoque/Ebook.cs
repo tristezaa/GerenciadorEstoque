@@ -18,13 +18,18 @@ namespace GerenciadorEstoque
 
         public override void AdicionarEntrada()
         {
-            Console.WriteLine("produto digital, não possui estoque físico.");
+            Console.WriteLine("Produto digital, não possui estoque físico.");
         }
 
-        public void AdicionarSaida()
+        public override void AdicionarSaida()
         {
+            Console.WriteLine($"Adicionar venda no E-book {nome}");
+            Console.WriteLine("Quantidade de vendas realizadas: ");
+            int entrada = int.Parse(Console.ReadLine());
+            vendas += entrada;
+            Console.WriteLine($"Total de vendas atualizado. Vendas totais: {vendas}");
         }
-
+        
         public override void Exibir()
         {
             base.Exibir();
